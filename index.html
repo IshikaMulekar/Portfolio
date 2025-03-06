@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishika Mulekar - AI & Data Science Enthusiast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ishika Mulekar</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome! I am <span class="highlight">Ishika Mulekar</span></h1>
+            <h2>Aspiring AI & Data Science Professional</h2>
+        </div>
+        <div class="hero-image">
+            <img src="Ishika(2).jpg" alt="Developer Illustration">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Objective</h2>
+        <p>
+            Passionate AI and Data Science enthusiast dedicated to leveraging machine learning, cloud technologies, and data-driven solutions to solve real-world challenges. I aim to build intelligent systems that drive efficiency and innovation across industries.
+        </p>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Work Experience</h2>
+        <div class="job" onclick="showCertificate('certificate-ibm')">
+            <h3>AI/ML Intern - IBM SkillsBuild</h3>
+            <p>June 2024 - July 2024</p>
+            <p>Worked with IBM Watson, Cloud, IBM Studio.</p>
+            <p>Developed and deployed scalable and reliable AI solutions.</p>
+        </div>
+        <div id="certificate-ibm" class="certificate hidden">
+            <img src="Final Certificate IBM SkillsBuild_page-0001.jpg" alt="IBM Certificate">
+        </div>
+
+        <div class="job" onclick="showCertificate('certificate-profectus')">
+            <h3>Web Application Development Intern - Profectus Digital Solution</h3>
+            <p>Jan 2024 - April 2024</p>
+            <p>Gained proficiency in PHP, HTML, CSS, and SQL.</p>
+            <p>Worked with SQL for database management and data retrieval.</p>
+        </div>
+        <div id="certificate-profectus" class="certificate hidden">
+            <img src="Internship Certificate - Ishika Mulekar_page-0001.jpg" alt="Profectus Digital Solution Certificate">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>EcoAdvisor for Responsible Consumption & Production</h3>
+            <p><strong>Technologies Used:</strong> IBM Watson, Cloud Object Storage, IBM Studio</p>
+            <p>Developed a chatbot to assist users in making sustainable decisions.</p>
+            <p>Created scalable AI solutions for real-world applications.</p>
+        </div>
+        <div class="project">
+            <h3>Heart Disease Prediction Model</h3>
+            <p><strong>Technologies Used:</strong> IBM Cloud, Watson Machine Learning, Python</p>
+            <p>Developed a machine learning model for early detection of heart disease.</p>
+            <p>Implemented predictive analytics for healthcare applications.</p>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <h2>Certifications</h2>
+        <p>C Programming Certification [ISO] (2022)</p>
+        <p>C++ Programming Certification [ISO] (2022)</p>
+        <p>Data Analysis Using AI Workshop [Skill Nation, 2024]</p>
+        <p>Artificial Intelligence Fundamentals [IBM SkillsBuild]</p>
+        <p>Project Management Fundamentals [IBM SkillsBuild]</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <p><strong>Programming Languages:</strong> HTML/CSS, JavaScript, Python, MySQL</p>
+        <p><strong>Python Libraries:</strong> Pandas, Numpy, Matplotlib</p>
+        <p><strong>Data Visualization:</strong> Tableau, Excel</p>
+        <p><strong>Additional:</strong> Git, PowerPoint/Slides, LaTeX</p>
+        <p><strong>Digital Marketing:</strong> WordPress</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: ishikamulekar@example.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ishikamulekar" target="_blank">linkedin.com/in/ishikamulekar</a></p>
+        <p>GitHub: <a href="https://github.com/ishikamulekar" target="_blank">github.com/ishikamulekar</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ishika Mulekar | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function showCertificate(id) {
+            var cert = document.getElementById(id);
+            if (cert.classList.contains("hidden")) {
+                cert.classList.remove("hidden");
+            } else {
+                cert.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+</html>
